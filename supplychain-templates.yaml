@@ -38,7 +38,7 @@ spec:
     metadata:
       name: $(workload.name)-image
     spec:
-      tag: harbor-repo.vmware.com/kontinuedemo/$(workload.name)
+      tag: 10.88.111.6:5000/$(workload.name)
       serviceAccount: service-account
       builder:
         kind: ClusterBuilder
